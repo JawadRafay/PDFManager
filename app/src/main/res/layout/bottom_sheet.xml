@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet"
+    android:padding="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginStart="5dp"/>
+
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:maxLines="2"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Hello World of dreams"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-20dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/gilroy_medium"
+                android:layout_below="@id/image"
+                android:text="Thu 15, 24"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-20dp"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/date"
+                android:layout_below="@id/image"
+                android:text="15:00 AM"
+                android:fontFamily="@font/gilroy_medium"
+                android:textColor="@color/black"
+                />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/image"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="#D3E6E6E6" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:weightSum="7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/info"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:src="@drawable/merge1"
+                android:tint="@color/blue"
+                app:tint="@color/blue"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merge PDF"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gilroy_bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:weightSum="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/l1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:src="@drawable/split2"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split PDF"
+            android:textSize="14sp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:weightSum="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/l2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:src="@drawable/favorites"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite"
+            android:textSize="14sp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:weightSum="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/l3"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:src="@drawable/print"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Print"
+            android:textSize="14sp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

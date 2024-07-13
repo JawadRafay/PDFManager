@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Share App"
+        android:icon="@drawable/share"
+        app:showAsAction="always" />
+
+    <item
+        android:title="Language Options"
+        app:showAsAction="always"
+        android:icon="@drawable/language"/>
+
+    <item
+        android:title="Feedback"
+        app:showAsAction="always"
+        android:icon="@drawable/feedback"/>
+
+    <item
+        android:title="Terms of use"
+        app:showAsAction="always"
+        android:icon="@drawable/terms_of_use"/>
+
+    <item
+        android:title="Privacy policy"
+        app:showAsAction="always"
+        android:icon="@drawable/privacy_policy"/>
+
+</menu>

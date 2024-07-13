@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/filesFragment"
+        android:title="Files"
+        app:showAsAction="always"
+        android:icon="@drawable/files"/>
+
+    <item android:id="@+id/favoritesFragment"
+        android:title="Favorites"
+        app:showAsAction="always"
+        android:icon="@drawable/favorites"/>
+
+    <item android:id="@+id/toolsFragment"
+        android:title="Tools"
+        app:showAsAction="always"
+        android:icon="@drawable/tools"/>
+</menu>
